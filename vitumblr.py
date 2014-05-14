@@ -1,4 +1,4 @@
-#!/usr/bin/python2.7
+#!/usr/bin/python2
 
 # vitumblr - Post to Tumblr using VIM
 # 
@@ -26,7 +26,7 @@ username = 'carpikes'
 # Write here your favorite editor
 editor = 'vim'
 
-# You have to register a new application here: http://www.tumblr.com/oauth/apps
+# You must register a new application here: https://www.tumblr.com/oauth/apps
 # And here you can get keys and secrets: https://api.tumblr.com/console
 consumer_key    = ''
 consumer_secret = ''
@@ -84,8 +84,7 @@ while edit:
                 else:
                     print "Posted ("+str(ret['id']) + ")"
             else:
-                print "Error!"
-                print ret
+                print "Error: " + ret
 
             edit = False
             break
